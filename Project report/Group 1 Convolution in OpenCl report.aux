@@ -1,0 +1,46 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Implementation}{1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Matlab implementation}{1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces A) The graph at the top is the overall waveform that is produced by “FIR.m”. B) The graph at the bottom is the frequency component of the overall wave.}}{2}\protected@file@percent }
+\newlabel{fig:mat1}{{1}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces A) The top graph is the frequency component of our resultant wave. B) The middle graph is the result of transferring our FIR coefficients into the frequency domain. C) The bottom graph represents our expected output, i.e. the filtered wave.}}{3}\protected@file@percent }
+\newlabel{fig:mat2}{{2}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Reading and writing CSV, file I/O decisions}{3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}General implementation: generic host code}{4}\protected@file@percent }
+\newlabel{fig:host1}{{2.3}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Sequential implementation}{4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Parallel implementation}{4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.1}Kernels}{4}\protected@file@percent }
+\newlabel{fig:host2}{{2.5.1}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.2}Time domain specifics}{5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3}FFT}{5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.4}Performance}{5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Overlap save implementation}{6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.6.1}Sequential implementation}{6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Example implementation of block structure in overlap save}}{7}\protected@file@percent }
+\newlabel{fig:results1}{{3}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.6.2}Parallel implementation}{8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Memory IO Results}{8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Evaluation}{8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Input bottleneck}{8}\protected@file@percent }
+\citation{mccardwell2015fir}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces A) Shows the amount of time taken to retrieve and process all chunks so that they are ready to be sent off to the GPU.}}{9}\protected@file@percent }
+\newlabel{fig:results1}{{4}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Memory management}{9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}OpenMP usage}{10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Don't over complicate}{10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Communicate more and follow a group coding structure}{10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Future work on finding optimal kernel size}{10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Implement our own FFT algorithm}{10}\protected@file@percent }
+\bibstyle{plain}
+\bibdata{Bibliography}
+\bibcite{mccardwell2015fir}{1}
+\citation{*}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Optimise chunk size}{11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.9}Chunking to small, wasteful I/O}{11}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Work done}{11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Jeremy Lang}{11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Reuben Speirs}{11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Victor Startsev}{11}\protected@file@percent }

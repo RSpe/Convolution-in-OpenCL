@@ -1,0 +1,21 @@
+FFTW install/setup.
+
+1. Download fftw DLL.
+
+2. run lib /def:libfftw3-3.def or lib /machine:x64 /def:libfftw3-3.def on powershell or cmd 
+	(needs to be the one you laucnh from VS)
+	
+3. Make a folder on your pc and place the corresponding .lib, .exp and .h in it.
+	e.g. ~/FFTW/lib/libfftw3-3.lib, ~/FFTW/lib/libfftw3-3.exp and ~/FFTW/include/fftw3.h
+	
+4. Go to project properties and make sure the configuration is ALL configurations.
+
+5. From C/C++ General - > Additional Include Directories. Enter the folder you just made with the .h
+
+6. From Linker General - > Additional Library Directories. Enter the folder you just made with the .lib
+
+7. From Linker Input - > Additional Dependencies. libfftw3-3.lib or your version.
+
+8. Copy paste DLL into same dir as source (libfftw3-3.dll for doubles)
+
+9. Make sure the run config is x64 NOT x86 or things WILL NOT work.
